@@ -110,7 +110,7 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
-	padding: 10px 20px 25px;
+	padding: 20px 0 25px 0;
 }
 .filter-options h2 {
   color: white;
@@ -281,14 +281,14 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
-#review-name{
+#review-name {
 	flex: 1 1	auto;
 	width: 50%;
 	justify-content: flex-start;
 	font-weight: bold;
 	font-size: 1.5em;
 }
-#review-date{
+#review-date {
 	flex: 1 0 auto;
 	width: 50%;
 	justify-content: flex-end;
@@ -296,14 +296,14 @@ nav h1 a {
 	color: #777;
 	font-style: italic;
 }
-#review-rating{
+#review-rating {
 	flex-basis:: 0 1 auto;
 	width: 20%;
 	padding: 3px 15px;
 	background-color: orange;
 	text-align: center;
 }
-#review-comment{
+#review-comment {
 	flex: auto;
 	background-color: yellow;
 }
@@ -313,4 +313,78 @@ nav h1 a {
 #filter-results {
 	display: flex;
 	flex-direction: column;
+}
+
+@media screen and (max-width:800px) {
+	/* nav {
+		background-color: #3397DB;
+	} */
+	#restaurants-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#restaurants-list li {
+		width: 95%;
+		padding: 0 0 10px 0;
+	}
+	#maincontent {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.inside #map-container {
+		width: 100%;
+		height: 700px;
+		position: relative;
+	}
+	#restaurant-container {
+		width: 100%;
+		padding: 100px 0 0 0;
+	}
+
+	#restaurant-name {
+		text-align: center;
+		font-weight: bold;
+	}
+	#restaurant-img {
+		width: 100%;
+	}
+	#restaurant-cuisine {
+		width: 100%;
+	}
+	#restaurant-address {
+	 margin-left: 15px;
+	}
+	#restaurant-hours{
+		margin: 0 0 20px 15px;
+	}
+	#reviews-container h2 {
+		margin-left: 15px;
+	}
+	#reviews-container {
+		width: 100%;
+		padding: 30px 0 80px 0;
+	}
+	#footer {
+		padding: 20px 0 20px 15px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	/* nav {
+		background-color: red;
+	} */
+	.filter-options {
+		display: flex;
+		height: 120px;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	#restaurants-list li {
+		text-align: center;
+	}
 }
