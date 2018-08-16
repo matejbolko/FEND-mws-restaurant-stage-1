@@ -33,8 +33,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
 }
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -51,7 +52,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #252831;
   text-align:center;
 }
@@ -71,7 +72,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+		height: 12px;
 }
 
 /* Display list items side by side */
@@ -185,13 +186,16 @@ nav h1 a {
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
+	flex-direction: column;
   top: 0;
   width: 100%;
   z-index: 1000;
+	height: 80px;
+	background-color: #252831;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 90%;
   position: fixed;
   right: 0;
   top: 80px;
@@ -205,7 +209,8 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
+	height: 15px;
 }
 #restaurant-name {
   color: #f18200;
@@ -237,13 +242,14 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-container, #reviews-container {
+	flex-direction: column;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 100px 40px 30px;
+  width: 46%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 2% 80px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -259,13 +265,11 @@ nav h1 a {
 #reviews-list li {
   background-color: #fff;
     border: 2px solid #f3f3f3;
-  display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
-  width: 85%;
+  padding: 20px 20px;
+  width: 90%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
