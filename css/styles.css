@@ -337,7 +337,7 @@ nav h1 a {
 	}
 	.inside #map-container {
 		width: 100%;
-		height: 700px;
+		height: 50vh;
 		position: relative;
 	}
 	#restaurant-container {
