@@ -48,6 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+	padding: 20px 0 20px 0;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -67,17 +68,19 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 12px 40px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
 		height: 12px;
+		background-color: #252831;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+		color: orange;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -89,13 +92,13 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: white;
     text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
+    color: #3397db;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
@@ -136,6 +139,7 @@ nav h1 a {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -161,7 +165,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -255,7 +259,7 @@ nav h1 a {
 #reviews-container {
   padding: 30px 2% 80px;
 }
-#reviews-container h2 {
+#reviews-container h3 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -361,7 +365,7 @@ nav h1 a {
 	#restaurant-hours{
 		margin: 0 0 20px 15px;
 	}
-	#reviews-container h2 {
+	#reviews-container h3 {
 		margin-left: 15px;
 	}
 	#reviews-container {
@@ -369,7 +373,7 @@ nav h1 a {
 		padding: 30px 0 80px 0;
 	}
 	#footer {
-		padding: 20px 0 20px 15px;
+		padding: 20px 0 20px 0;
 	}
 }
 
